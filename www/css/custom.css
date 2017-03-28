@@ -1,12 +1,45 @@
-body {
+.opacity1{
+  opacity:1;
+}
+
+
+.ng-enter {
+  transition:1s linear all;
+  opacity:1
+}
+
+.ng-enter.ng-enter-active {
+  opacity:1
+}
+
+.ng-leave {
+  transition:1s linear all;
+  opacity:1
+}
+
+.ng-leave.ng-leave-active {
+  opacity:1
+}
+
+
+body,main {
   height: 100%;
   min-height: 100%;
-  background-image: url("https://daks2k3a4ib2z.cloudfront.net/56b10c57835a1cc917f749ba/5899eed61c4e926c4347217f_pagina_inicial.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
   font-size: 13px;
   letter-spacing: 0px;
+}
+
+.bg{
+  height: 100%;
+  min-height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../img/pagina_inicial.jpg");
+
 }
 
 h1 {
@@ -48,6 +81,7 @@ img {
 }
 
 .view {
+  margin-top: 93px;
   position: relative;
   min-height: 100%;
   background-color: #fff;
