@@ -138,6 +138,11 @@ var app = angular.module('starter', ['ionic','ngAnimate'])
     url: '/contato',
     templateUrl: './template/contato.html'
   })
+  .state('clientes',{
+    controller: 'ClientesController',
+    url: '/clientes',
+    templateUrl: './template/clientes.html'
+  })
   ;
 
   $urlRouterProvider.otherwise('/home');

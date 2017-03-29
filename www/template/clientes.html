@@ -1,0 +1,37 @@
+<div class="customers view" id="clientes">
+        <div class="vertical-center">
+            <div class="w-container">
+                <div class="w-row">
+                    <div class="w-col w-col-3">
+                        <nav>
+                            <h1>Nossos<br>clientes</h1>
+                        </nav>
+                        <ul class="submenu w-list-unstyled">
+                            <li class="spaced submenu-item"><a class="w-clearfix" href="" ng-click="changeType(1)"><span class="submenu-item-before">I</span>Infraestrutura Engenharia Oleogas</a>
+                            </li>
+                            <li class="spaced submenu-item"><a class="w-clearfix" href="" ng-click="changeType(2)"><span class="submenu-item-before">II</span>Industria Atacadistas Transporte</a>
+                            </li>
+                            <li class="spaced submenu-item"><a class="w-clearfix" href="" ng-click="changeType(3)"><span class="submenu-item-before">III</span>Sindicatos Associações</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-col w-col-1"></div>
+                    <div class="w-col w-col-8">
+                        <a class="w-inline-block" href="" ng-if="!reachLeft" ng-click="backPage()">
+                            <div class="left nav-arrow">‹</div>
+                        </a>
+                        <a class="w-inline-block" href="" ng-if="!reachRight" ng-click="nextPage()">
+                            <div class="nav-arrow right">›</div>
+                        </a>
+                        <div class="content-box w-clearfix">
+                            <div ng-repeat="client in showingClients" class="customer-logo-column">
+                                <div class="customer-logo-container"><img class="centered-logo customer" alt="{{client.cliente}}" ng-src="{{client.imgUrl}}">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
