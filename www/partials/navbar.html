@@ -1,4 +1,4 @@
-<div class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+<div class="navbar w-nav" ng-controller="NavClickController" data-animation="default" data-collapse="medium" data-duration="400">
   <div class="w-container">
     <a class="brand w-nav-brand" href="#inicio"><img class="logo" src="img/bs-logo.png">
     </a>
@@ -11,7 +11,7 @@
       <a class="contact-us nav-link w-nav-link" ui-sref="contato">Contato</a>
     </nav>
     <div class="w-nav-button">
-      <div class="w-icon-nav-menu"></div>
+      <div class="w-icon-nav-menu" ng-click="Click()" ></div>
     </div>
   </div>
 </div>
